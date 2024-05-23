@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.video {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form button {
+    padding: 0.7em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTuber's Site</title>
+    <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTuber's Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mal MM2</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <p>Mal MM2 is a content creator on YouTube who makes videos about the game "Murder Mystery 2" on ROBLOX. He began his career in December 2023 with two YouTube shorts titled "C4 Shot!" and "Hero Victory". His video "33 SUBS!" went viral, propelling his career to new heights. Currently, he has 400 subscribers, 53,000 views, and has created 50 videos and shorts.<p>
+                <li><a href="#videos">Videos</a></li>
+                <p>Mal MM2's most recent video is "<a href="https://www.youtube.com/watch?v=ZpKpMuAeIiA">MM2 montage :3</a>".<p>
+                <li><a href="#contact">Contact</a></li>
+                <p>contact mal over Youtube as we are still trying to work on the "send a note" feature.<p>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>hello yall im mal mm2 also know as stubenp on roblox i love all my fans<p>
+        </section>
+        <section id="videos">
+            <h2>Latest Videos</h2>
+            <div class="video-grid">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nTups6ItwBk" frameborder="0" allowfullscreen></iframe>
+                    <p>Video Title 1</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VPOrf1L4ryc" frameborder="0" allowfullscreen></iframe>
+                    <p>Video Title 2</p>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 [YouTuber's Name]. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
