@@ -1,95 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5281577509219940"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~ Mal MM2</title>
-    <style>
-        
-        body {
-          background-image: url('leshy_render_upscaled.png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mal MM2 | Home</title>
 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-        header {
-            background-color: rgba(51, 51, 100, 0.8);
-            color: white;
-            text-align: center;
-            padding: 0.5em;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            margin-bottom: 60px;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-        header h1 {
-            margin-bottom: 0.2em;
-            font-size: 1.5em;
-        }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
 
-        section {
-            max-width: 1000px;
-            margin: 7em auto;
-            padding: 1em;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+      /* 🌈 BACKGROUND */
+      background: linear-gradient(
+        135deg,
+        #f8f9ff,
+        #eef1ff,
+        #ffffff
+      );
+      background-size: 400% 400%;
+      animation: bgMove 12s ease infinite;
+    }
 
-        h1, h2 {
-            color: #333;
-        }
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: rgba(51, 51, 100, 0.8);
-            color: white;
-        }
-        
-        .youtube-short {
-            width: 100%;
-            height: 300px;
-        }
-    </style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .left {
+      width: 60%;
+      padding: 2rem 3rem;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1s ease;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #555;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 700px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .content p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* RIGHT IMAGE */
+    .right {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+      animation: float 8s ease-in-out infinite;
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      .right img {
+        max-width: 80%;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Mal MM2</h1>
-    </header>
-    <section>
-        <p>this site looks best on a computer. watch it there for the best experience.</p>
-        <h2><br><br>About Mal MM2</h2>
-        <p>Channel description: "hello yall im mal mm2 also know as stubenp on roblox i love all my fans"<br><br>Mal MM2 is a content creator on YouTube who makes videos about the game "Murder Mystery 2" on ROBLOX. He began his youtube channel in December 2023 with two YouTube shorts titled "C4 Shot!" and "Hero Victory". His video "33 SUBS!" went viral, propelling his potential career to new heights. Currently (as of 6/12/24), he has 600 subscribers, 63,000 views, and has created 56 videos and shorts. </p>
-    </section>
+  <div class="left">
+    <div class="logo">Mal MM2</div>
 
-    <section>
-        <h2>Popular videos</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="videos.html">Popular</a>
+    </nav>
 
-        <div class="youtube-short">
-         <iframe width="180" height="315" src="https://www.youtube.com/embed/nTups6ItwBk" frameborder="0" allowfullscreen></iframe>
-         <iframe width="180" height="315" src="https://www.youtube.com/embed/N-rmgHWgoXk" frameborder="0" allowfullscreen></iframe>
-         <iframe width="180" height="315" src="https://www.youtube.com/embed/XiNV-Xx6LPo" frameborder="0" allowfullscreen></iframe>
-         <iframe width="180" height="315" src="https://www.youtube.com/embed/huR-_ry9sH8" frameborder="0" allowfullscreen></iframe>
-         <iframe width="180" height="315" src="https://www.youtube.com/embed/n24EeufNjS8" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <br><br><br>
-    </section>
-    <section>
-        <iframe height="90px" width="310px" frameborder="0" src="https://socialcounts.org/youtube-live-subscriber-count/UCGDJu_1U6ovcORU_CVMe8rg/embed" allowFullScreen></iframe>
-   </section>
+    <div class="content">
+      <p>This website is best viewed on a pc or labtop./p>
 
-    <footer>
-        <p>business inquiry email: ironikusu@gmail.com (include subject: mal mm2). SUB TO MAL MM2 OR ELSE!</p>
+      <p>
+        Mal MM2 is a Roblox content creator on YouTube known for making Murder Mystery
+        montages. He started his channel in December 2023 and gained popularity quickly.
+        Their second Short, <strong>"CLEARED!"</strong>, went viral and now sits at 11K views.
+        Their most popular video has over 30,000 views and is titled <strong>"MM2 Murd Round!"</strong><br><br>
+      </p>
+<h2>Channel highlights!<br><br><h2>
+      <iframe width="155" height="300" src="https://www.youtube.com/embed/xl7BPKB9CAY?si=_Gs3N8K-ii0yBzTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="155" height="300" src="https://www.youtube.com/embed/593FrHv-qD0" title="Mm2 Sheriff Montage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="155" height="300" src="https://www.youtube.com/embed/JqKmjR4czds" title="Mm2 Insane shots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="155" height="300" src="https://www.youtube.com/embed/-QFy03cRHXg" title="WHENS THE MM2 EASTER UPDATE?!? #mm2 #roblox #murdermystery2 #roblox #fypviral #relatable #robloxedit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <footer>
+      © 2026 | All trademarks, artwork, and associated imagery belong to their respective owners.
+    </footer>
+  </div>
+
+  <div class="right">
+    <img src="side.png" alt="Mal MM2 artwork" />
+  </div>
+</body>
+</html>
